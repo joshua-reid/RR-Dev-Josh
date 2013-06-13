@@ -1,0 +1,69 @@
+      <footer>
+        <div class="gW clearfix">
+          <section class="footer-top clearfix">
+            <div class="gdS3">
+              <h4>All Resources</h4>
+              <!--[[!Wayfinder? &startId=`0` &where=`{"class_key:=": "ArticlesContainer"}` &outerClass=`unstyled`]]-->
+              <ul class="unstyled">
+                <li><a href="[[++reply_site_url]]automotive/">Automotive</a><span class="accordion-button"><i class="icon-plus"></i></span>
+                  <ul class="accordion-content">
+                    <li><a href="[[++reply_site_url]]automotive/tags/new+cars">New Cars</a></li>
+                    <li><a href="[[++reply_site_url]]automotive/tags/used+cars">Used Cars</a></li>
+                  </ul>
+                </li>
+                <li><a href="[[++reply_site_url]]insurance/">Insurance</a><span class="accordion-button"><i class="icon-plus"></i></span>
+                  <ul class="accordion-content">
+                    <li><a href="[[++reply_site_url]]insurance/tags/auto+insurance">Auto Insurance</a></li>
+                    <li><a href="[[++reply_site_url]]insurance/tags/home+insurance">Home Insurance</a></li>
+                  </ul>
+                </li>
+                <li><a href="[[++reply_site_url]]realestate/">Real Estate</a><span class="accordion-button"><i class="icon-plus"></i></span>
+                  <ul class="accordion-content">
+                    <li><a href="[[++reply_site_url]]realestate/tags/buy+non-foreclosure">Buy Non-Foreclosure</a></li>
+                    <li><a href="[[++reply_site_url]]realestate/tags/buy+foreclosure">Buy Foreclosure</a></li>
+                    <li><a href="[[++reply_site_url]]realestate/tags/sell">Sell</a></li>
+                    <li><a href="[[++reply_site_url]]realestate/tags/rentals">Rentals</a></li>
+                  </ul>
+                </li>
+				<li><a href="[[++reply_site_url]]home-improvement/">Home Improvement</a><span class="accordion-button"><i class="icon-plus"></i></span>
+				    <ul class="accordion-content">
+                    	<li><a href="[[++reply_site_url]]home-improvement/tags/hvac">HVAC</a></li>
+                  	</ul>
+				</li>
+              </ul>
+            </div>
+            <div class="gdS3">
+              <h4>Get Estimates</h4>
+              [[!getCache?
+ 				&element=`Wayfinder`
+				&cacheExpires=`3600`
+				&cacheElementKey=`footer-get-estimates-gdS3`
+                &where=`{"class_key:!=": "ArticlesContainer"}` 
+                &startId=`0` 
+                &outerTpl=`accordionContainer` 
+                &outerClass=`unstyled` 
+                &innerRowTpl=`accordionInnerRows` 
+                &rowTpl=`accordionRows` 
+                &parentRowTpl=`accordionParentRows` 
+                &innerTpl=`accordionInnerContainer` 
+                &innerClass=`accordion-content`
+				        &excludeDocs=`33,1506`
+              ]]
+            </div>
+			      [[+tags:notempty=`[[$TagNav-footer]]`]]
+            [[+archives:notempty=`[[$ArchiveNav-footer]]`]]
+          </section>
+          <section class="footer-bottom clearfix">
+            <nav class="gd6">
+              <ul class="inline">
+                <li><a href="http://www.reply.com">Reply! Home</a></li>
+                <li><a href="[[++reply_site_url]]About/">About</a></li>
+                <li><a href="[[++reply_site_url]]Contact/">Contact</a></li>
+                <li><a href="[[++reply_site_url]]Terms/">Terms Of Use</a></li>
+                <li><a href="[[++reply_site_url]]Privacy/">Privacy Policy</a></li>
+              </ul>
+            </nav>
+            <p class="gdM6">&copy; 2013 <a href="http://www.reply.com">Reply!, Inc.</a> All Rights Reserved.</p>
+          </section>
+        </div> <!-- /gW -->  
+      </footer>

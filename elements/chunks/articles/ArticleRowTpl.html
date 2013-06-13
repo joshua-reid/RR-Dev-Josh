@@ -1,0 +1,15 @@
+<div class="post article-row clearfix">
+    <h2 class="title"><a href="[[++reply_site_url]][[~[[+id]]]]">[[+pagetitle]]</a></h2>
+	<section class="clearfix">
+[[+tv.coverphoto:notempty=`<a class="pull-left cover-photo" style="background-image: url([[+tv.coverphoto]]);" href="[[++reply_site_url]][[~[[+id]]]]" title="[[+pagetitle]]"></a>`]]
+	<p class="post-info">[[%articles.posted_by]] <a rel="me" href="[[++reply_site_url]][[~[[+parent]]]]author/[[+createdby:userinfo=`username`]]" >[[+createdby:userinfo=`fullname`]]</a> <span class="date">[[+publishedon:strtotime:date=`%b %d, %Y`]]</span> [[+tv.articlestags:notempty=` | <span class="tags">[[%articles.tags]]: [[!tolinks? &items=`[[+tv.articlestags]]` &target=`[[*id]]` &tpl=`LinkTpl`  &useTagsFurl=`1`]]</span>`]]</p>
+	  <div class="entry">
+		  <p><a href="[[++reply_site_url]][[~[[+id]]]]">[[+introtext:default=`[[+content:ellipsis=`400`]]`]]</a></p>
+	  </div>
+	</section>
+    <section class="postmeta clearfix">
+      <span class="read-more pull-right">
+        <a href="[[++reply_site_url]][[~[[+id]]]]" class="readmore">[[%articles.read_more]] <i class="icon-chevron-right"></i></a>
+      </span>
+    </section>
+</div>

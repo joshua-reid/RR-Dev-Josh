@@ -1,0 +1,12 @@
+<item>
+  <title>[[+pagetitle:htmlent]]</title>
+  <link>http://www.reply.com/[[~[[+id]]]]</link>
+  <description>
+    [[+introtext:default=`[[+content:ellipsis=`600`]]`:cdata]]
+  </description>
+  <pubDate>[[+publishedon:strtotime:date=`%a, %d %b %Y %H:%M:%S %z`]]</pubDate>
+  <guid isPermaLink="false">http://www.reply.com/[[~[[+id]]]]</guid>
+  <dc:creator>
+      [[+createdby:userinfo=`fullname`]]
+  </dc:creator>
+</item>

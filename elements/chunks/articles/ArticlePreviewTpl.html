@@ -1,0 +1,10 @@
+              <div class="article-preview article-medium">
+                [[+tv.coverphoto:notempty=`<a class="cover-photo" style="background-image: url([[+tv.coverphoto]]); background-position:center;" href="[[++reply_site_url]][[~[[+id]]]]" title="[[+pagetitle]]"></a>`]]
+                <p class="title"><a style="color:inherit;" href="[[++reply_site_url]][[~[[+id]]]]" title="[[+pagetitle]]">[[+pagetitle:ellipsis=`50`]]</p>
+                <p class="intro"><a style="color:inherit;" href="[[++reply_site_url]][[~[[+id]]]]" title="[[+introtext]]">[[+introtext:ellipsis=`30`]]</a></p>
+                <span class="info">
+                  <p class="date">Published [[+publishedon:strtotime:date=`%b %d`]]</p>
+                  <p>By <a rel="me" href="[[++reply_site_url]][[~[[+parent]]]]author/[[+createdby:userinfo=`username`]]" >[[+createdby:userinfo=`fullname`]]</a></p>
+                </span>
+                <a href="[[++reply_site_url]][[~[[+id]]]]"class="tab">[[+tab-copy]] <i class="icon-[[+tab-icon]]"></i></a>
+              </div>

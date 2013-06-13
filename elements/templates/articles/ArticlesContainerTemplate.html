@@ -1,0 +1,29 @@
+[[$head]]
+  <body id="ArticlesContainerTemplate">
+    [[$header]]
+    <div class="main">
+      <section class="gW clearfix">
+        <div class="gd8">
+          <div class="article-wrapper clearfix">
+            [[$Bio-[[!lastInPath]]]]
+            <h1><a href="[[++reply_site_url]][[~[[*id]]]]" title="">Latest in [[*pagetitle]]</a></h1>
+            [[*content]]
+          </div>
+        </div> <!-- /gdS8 -->
+        <aside class="gdM4">
+          <div class="sidemenu">
+            [[$MiniForm-[[*alias]]-generic]]
+          </div>
+          <div class="sidemenu">
+            <h4>[[*pagetitle]] Categories</h4>
+            [[$CategoryNav-[[*alias]]]]
+          </div>
+        </aside> 
+      </section> <!-- /gW -->   
+    </div> <!-- /main -->
+    [[$footer]]
+    [[$footer-scripts]]
+    [[$footer-scripts-widgets]]
+	[[$site-tracking]]
+  </body>
+</html>

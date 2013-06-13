@@ -1,0 +1,69 @@
+[[$head-test? &head_meta_desc=`[[*introtext]]`]]
+  <body id="ArticleTemplate">
+    <span style="display:none;">[[!HitsPage?&saveTv=`true`]]</span>
+    [[$header]]
+    <div class="main">
+      <section class="gW clearfix">
+        <div class="gd8">
+          <div class="article-wrapper clearfix">
+            <ul class="B_crumbBox">
+              [[QuickCrumbs? 
+                &separator=`<li> | </li>` 
+                &tpl=`crumbTpl` 
+                &selfTpl=`crumbHereTpl` 
+                &hideEmptyContainers=`1` 
+                &showSiteStart=`0`
+              ]] 
+            </ul>
+            <ul id="social-box" class="unstyled clearfix">
+                <li id="social-tab"><i class="icon-circle-arrow-left"></i><span class="share-text hide">Share</span></li>
+                <li><div class="fb-like" data-href="[[++reply_site_url]][[~[[*id]]]]" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div></li>
+                <li><a class="twitter-share-button" href="https://twitter.com/share" data-url="[[++reply_site_url]][[~[[*id]]]]" data-text="[[*pagetitle]]: " data-count="vertical">Tweet</a></li>
+                <li><div class="g-plusone" data-size="tall" data-url="[[++reply_site_url]][[~[[*id]]]]"></div></li>
+                <li><su:badge layout="5"></su:badge></li>
+                <li><script type="IN/Share" data-counter="top" data-url="[[++reply_site_url]][[~[[*id]]]]"></script></li>
+            </ul>
+            <h1>[[*pagetitle]]</h1>
+            <p class="post-info">
+              <span class="left">Posted on [[*publishedon:strtotime:date=`%b %d, %Y`]] by <a rel="me" href="[[++reply_site_url]][[~[[*id]]]]author/[[*createdby:userinfo=`username`]]">[[*createdby:userinfo=`fullname`]]</a></span>
+              [[*articlestags:notempty=`
+              <span class="tags left">&nbsp;| Tags: [[!tolinks? &useTagsFurl=`1` &items=`[[*articlestags]]` &tpl=`LinkTpl` &target=`[[*parent]]` ]]</span>
+              `]]
+              [[+comments_enabled:is=`1`:then=`&nbsp;| <a href="[[++reply_site_url]][[~[[*id]]]]#comments" class="comments">Comments ([[+comments_count]])</a>`]]
+            </p>
+            <div class="entry">
+              <p class="lead">[[*introtext]]</p>
+              [[*content]]
+              [[$lorumipsum]]
+              [[$SEM-button-popover]]
+            </div>
+          </div> <!-- /article-wrapper -->  
+        </div> <!-- /gd8 --> 
+        <aside class="gdM4">
+          <div class="sidemenu">
+            [[$MiniForm-[[!getResourceField? &id=`[[*parent]]` &field=`alias`]]@[[*cat]]]]
+            [[$MiniForm-automotive-2]]
+          </div>
+          <div class="sidemenu">
+            <h4>[[!getResourceField? &id=`[[*parent]]` &field=`pagetitle`]] Categories</h4>
+            [[$CategoryNav-[[!getResourceField? &id=`[[*parent]]` &field=`alias`]]]]
+          </div>
+        </aside>
+      </section> <!-- /gW -->   
+    </div> <!-- /main -->
+    [[$footer]]
+    [[$footer-scripts]]
+	<link rel="stylesheet" href="assets/css/vendor/bootstrap-alerts.css">
+    <style>
+	  .popover {background-color: #FADD91;}
+	  .popover.top .arrow:after { border-top-color: #FADD91;}
+	  .popover-content {padding: 5px 20px;}
+	  .popover p {margin:0px;}
+    </style>
+<script type="text/javascript" src="/assets/js/vendor/bootstrap-alert.js"></script>
+<script type="text/javascript" src="/assets/js/reply.widgets.validation.js"></script>
+<script type="text/javascript" src="/assets/js/reply.widgets.automotive.js"></script>
+    [[$SocialShareScripts]]
+    [[$site-tracking]]
+  </body>
+</html>

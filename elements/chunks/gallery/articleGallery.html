@@ -1,0 +1,24 @@
+<div class="gallery-container">
+  <h2>[[*articlegallerytitle]]</h2>
+  <ul id="gallery" class="unstyled clearfix" data-toggle="modal-gallery" data-target="#modal-gallery">
+    [[mh.parseMIGXToGallery? 
+      &tpl=`articleGalleryTpl` 
+      &input=`[[*articlegallery]]` 
+    ]]
+  </ul>			  
+</div>
+<div id="modal-gallery" class="modal modal-gallery hide fade" tabindex="-1">
+  <section class="modal-header">
+      <a class="close" data-dismiss="modal">&times;</a>
+      <h3 class="modal-title"></h3>
+  </section>
+  <section class="modal-body">
+    <div class="modal-image"></div>
+  </section>
+  <section class="modal-footer">
+      <a class="btn btn-info modal-prev"><i class="icon-circle-arrow-left icon-white"></i> Previous</a>
+      <a class="btn btn-primary modal-next">Next <i class="icon-circle-arrow-right icon-white"></i></a>
+      <a class="btn btn-success modal-play modal-slideshow" data-slideshow="5000"><i class="icon-play icon-white"></i> Slideshow</a>
+      <a class="btn modal-download" target="_blank"><i class="icon-download"></i> Download</a>
+  </section>
+</div>

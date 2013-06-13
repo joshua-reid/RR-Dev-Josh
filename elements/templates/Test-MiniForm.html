@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="assets/css/miniform_bootstrap.css" rel="stylesheet" type="text/css" />
+    <style>
+    .btn-continue { font-size: 18px;
+    padding: 6px;
+    width: 270px;}
+    .btn-continue i {margin-top: 5px;}
+    .form_wrap {position: absolute; display: block;}
+    .form {position: absolute; display: block;}
+    .miniform_all {
+    background:url(http://reply-articles.reply.modxcloud.com/assets/images/forms/miniform_300x250.png) bottom center no-repeat; 
+    margin: 15px 50px; width:300px;
+    height:250px; font-size: 11px;}
+    .header { display: block;
+    height: 50px;
+    position: absolute;
+    top:0px;}
+    .header table td {height:50px;
+    vertical-align: middle !important;}
+    .header h1 {     color: #73767C;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 16px;
+    margin: 0;
+    padding-right: 5px;
+    padding-left: 50px;
+    text-align: left;
+    width: 240px;}
+    .header-icon {
+    display: block;
+    margin: 7px 0 0 5px;
+    position: absolute;
+    top: 0;}
+    .questions_wrap {top:50px; position: relative; width:285px; margin-left: 15px;}
+    .questions_wrap h3 {font-size: 14px; line-height: 14px; margin: 3px 0 5px;}
+    .powered_by {    color: #B9B9B9;
+    display: block;
+    height: 12px;
+    left: 0;
+    margin: 0;
+    padding: 3px 0;
+    position: absolute;
+    text-align: center;
+    top: 230px;
+    width: 300px;}
+    .powered {    font-size: 10px;
+    text-align: center;}
+    .powered a {    color: #B9B9B9;
+    text-decoration: none;}
+    .error-message{    display: block;
+    height: 15px;
+    margin: 0;
+    position: relative;
+    top: -5px;}
+    .error-message p {    color: red;
+    font-weight: 500;
+    margin: 0;}
+    /*  Autos Styling */
+    .carimgwrap {    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;}
+    .select_make {width:135px;}
+    .select_model {width:135px;}
+    .select_make select {padding:3px; margin: 0 0 3px; width:135px; font-size: 12px;}
+    .select_model select {padding:3px; margin: 0 0 3px; width:135px; font-size: 12px;}
+    .select_make select, input[type="file"] {height: 25px;}
+    .select_model select, input[type="file"] {height: 25px;}
+    .zip-auto {height:15px; font-size: 12px;}
+    /*  Real Estate Styling */
+    .select_project .radio {    background-color: #E1E1E1;
+    border: 1px solid #C1C1C1;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: 300;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    padding-left: 30px;
+    width: 150px;}
+    .select_project .radio:hover {
+    background-color: #d1d1d1;
+    }
+    /* Education Styling */
+    .concentrationdegree select{font-size: 12px;
+    margin: 0 0 5px;
+    padding: 3px;}
+    .concentrationdegree select, input[type="file"] {height:25px;}
+    </style>
+</head>
+<body>
+    <h4 style="margin-left: 50px;">HI, NO CATEGORY</H4>
+    <!-- START HI MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Free Home Improvement Quotes</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/money-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i> Get started now, select here:</h3>
+                                <div class="select_project">
+                                    <select name="category" class="" onchange="javascript:cp()">
+                                        <option value="">Select Project</option>
+                                        <option value="60">Additions and Remodels</option>
+                                        <option value="61">Appraisers and Home Inspectors</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                      <input class="input-small" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="regex[\d{5}],required" data-bvalidator-msg="Please enter your zip" placeholder="Enter Zip">
+                                </div>
+                                <div class="error-message"><p>Please Enter Zip</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.contractors.com/" target="_blank">Contractors.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap  -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">HI, CATEGORY</H4>
+     <!-- START HI CATEGORY MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Free HVAC Quotes</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/tools-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i> Get started now, select here:</h3>
+                                <div class="select_project">
+                                    <select name="category" class="" onchange="javascript:cp()">
+                                        <option value="">Select one...</option>
+                                        <option value="Install Central A/C">Install Central A/C</option><option value="Install Gas or Electric Boiler or Radiator">Install Gas or Electric Boiler or Radiator</option><option value="Install Gas or Electric Furnace">Install Gas or Electric Furnace</option><option value="Install Heat Pump">Install Heat Pump</option><option value="Install Oil Boiler or Radiator">Install Oil Boiler or Radiator</option><option value="Install Oil Furnace">Install Oil Furnace</option><option value="Install Swamp Cooler">Install Swamp Cooler</option><option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                      <input class="input-small" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="regex[\d{5}],required" data-bvalidator-msg="Please enter your zip" placeholder="Enter Zip">
+                                </div>
+                                <div class="error-message"><p>Please Enter Zip</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.contractors.com/" target="_blank">Contractors.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap  -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">AUTO</H4>
+    <!-- START AUTO MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>See New Car Clearance Prices</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/car-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i> Get started now, choose your vehicle:</h3>
+                                   <div class="select_make"> 
+                                    <select class="" id="make" name="make">
+                                            <option value="">Select a Make</option>
+                                            <option value="Acura" >Acura</option>
+                                            <option value="Audi" >Audi</option>
+                                            <option value="BMW" >BMW</option>
+                                            <option value="Buick" >Buick</option>
+                                        </select>
+                                </div>
+                                <div class="select_model"> 
+                                    <select class="" id="model" name="model" onchange="">
+                                        <option value="">Select a Model</option>
+                                        <option value="Acura" >Camaro</option>
+                                        <option value="Audi" >Cruze</option>
+                                    </select>
+                                </div>
+                                <div class="carimgwrap">
+                                    <img id="carimg0" class="car_bg" src="assets/images/forms/car_130x98.png" width=130 height=98 border=0>
+                                </div>
+                                <div class="zip_field">
+                                      <input class="input-small zip-auto" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="regex[\d{5}],required" data-bvalidator-msg="Please enter your zip" placeholder="Enter Zip">
+                                </div>
+                                <div class="error-message"><p>Please Enter Zip</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.imotors.com/" target="_blank">iMotors.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap  -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">RE, NO CATEGORY</H4>
+    <!-- START REAL ESTATE MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Free Real Estate Services</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/key-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i>  Select an option to get started:</h3>
+                                <div class="select_project">
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                          View homes for sale
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                          View rentals available
+                                        </label>
+                                        <label class="radio">
+                                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                          Get your home's value
+                                        </label>
+                                </div>
+                                <div class="zip_field">
+                                      <input class="input-medium" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="" data-bvalidator-msg="" placeholder="Enter Zip or City, State">
+                                </div>
+                                <div class="error-message"><p>Please Answer the Question</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.connectwithlife.com/" target="_blank">ConnectWithLife.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">EDU, NO CATEGORY</H4>
+    <!-- START EDUCATION MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Find Free Online Degree Programs Today!</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/star-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i>  Select an area of study:</h3>
+                                <div class="select_project">
+                                <select name="category" class="" onchange="javascript:cp()">
+                                 <option value="">Select Area of Study</option>
+                                    <option value="99">Arts and Design</option>
+                                    <option value="100">Business and MBA</option>
+                                    <option value="101">Computers and IT</option>
+                                    <option value="102">Criminal Justice</option>
+                                    <option value="103">Education and Teaching</option>
+                                    <option value="104">Healthcare</option>
+                                    <option value="105">Legal</option>
+                                    <option value="106">Liberal Arts</option>
+                                    <option value="107">Nursing</option>
+                                    <option value="108">Science and Engineering</option>
+                                    <option value="109">Social Sciences</option>
+                                    <option value="110">Trades and Careers</option>
+                                    </select>
+                                </div>
+                                <div class="concentrationdegree" id="" style=""> 
+                                    <select name="concentration" class="concentration" style="width:140px;">
+                                    <option value="">Concentration...</option>  
+                                    </select>
+                                    <select name="degreetype" class="degreetype" style="width:120px;">
+                                    <option value="">Degree type...</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                       <input class="input-small zip-auto" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="regex[\d{5}],required" data-bvalidator-msg="Please enter your zip" placeholder="Enter Zip">
+                                </div>
+                                <div class="error-message"><p>Please Answer the Question</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.educationhub.com/" target="_blank">EducationHub.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">EDU, CATEGORY</H4>
+    <!-- START EDUCATION PASSED MINIFORM -->
+       <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Find Computers and IT Degree Programs!</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/star-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i>  Select an area of study:</h3>
+                                <div class="concentrationdegree" id="" style=""> 
+                                    <select name="concentration" class="concentration" style="width:140px;">
+                                    <option value="">Concentration...</option>  
+                                    </select>
+                                    <select name="degreetype" class="degreetype" style="width:120px;">
+                                    <option value="">Degree type...</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                       <input class="input-small zip-auto" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="regex[\d{5}],required" data-bvalidator-msg="Please enter your zip" placeholder="Enter Zip">
+                                </div>
+                                <div class="error-message"><p>Please Answer the Question</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.educationhub.com/" target="_blank">EducationHub.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">INS, NO CATEGORY</H4>
+     <!-- START INSURANCE MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Free Insurance Quotes</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/check-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i> Get started now, select one:</h3>
+                                <div class="select_project">
+                                    <select name="category" class="" onchange="javascript:cp()">
+                                        <option value="">Select Insurance Type</option>
+                                        <option value="">Automobile</option>
+                                        <option value="">Home</option>
+                                    </select>
+                                </div>
+                                <div class="select_project">
+                                    <select name="category" class="" onchange="javascript:cp()">
+                                        <option value="">Select one...</option>
+                                        <option value="">Currently Insured</option>
+                                        <option value="">Uninsured</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                     <input class="input-medium" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="" data-bvalidator-msg="" placeholder="Enter Zip or City, State">
+                                </div>
+                                <div class="error-message"><p>Please Enter Zip</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.connectwithlife.com/" target="_blank">ConnectWithLife.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap  -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+    <h4 style="margin-left: 50px;">INS, CATEGORY</H4>
+    <!-- START INSURANCE PASSED MINIFORM -->
+    <div class="miniform_all">
+        <div style="position: relative;">
+            <div style="position: absolute; top: 0px; left: 0px;">
+                <!-- start dcs_wrap -->
+                <div class="form_wrap">
+                    <form>
+                        <div class="header">
+                             <table>
+                                <tbody><tr>
+                                <td><h1>Free Automobile Insurance Quotes</h1></td>
+                                </tr>
+                            </tbody></table>
+                            <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/car-icon.png">
+                        </div>
+                        <div class="questions_wrap">
+                                <h3><i class="icon-arrow-right"></i> Get started now, select one:</h3>
+                                <div class="select_project">
+                                    <select name="category" class="" onchange="javascript:cp()">
+                                        <option value="">Select one...</option>
+                                        <option value="">Currently Insured</option>
+                                        <option value="">Uninsured</option>
+                                    </select>
+                                </div>
+                                <div class="zip_field">
+                                     <input class="input-medium" id="MainZip" name="MainZip" maxlength="5" type="text" data-bvalidator="" data-bvalidator-msg="" placeholder="Enter Zip or City, State">
+                                </div>
+                                <div class="error-message"><p>Please Enter Zip</p></div>
+                                <div class="btn_wrap" id="btnsbmt">
+                                <button class="btn btn-success btn-continue" type="button">Continue <i class="icon-play icon-white"></i></button>
+                                </div>
+                           </div>
+                            <div class="powered_by">
+                                <div class="powered">Powered by <a href="http://www.connectwithlife.com/" target="_blank">ConnectWithLife.com</a></div>
+                            </div>
+                    </form>
+                </div>
+                <!-- end form_wrap  -->
+            </div>
+        </div>
+    </div>
+    <!-- END MINIDORM -->
+</body>
+</html>

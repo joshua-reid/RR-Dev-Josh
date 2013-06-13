@@ -1,0 +1,101 @@
+  <!-- START AUTO MINIFORM -->
+      <div class="mini_form_container">
+        <a name="widget_side" /> </a> 
+            <form class="clearfix" action="" method="post" id="WidgetAutos">
+            <input type="hidden" name="adid" value="[[++auto_new_adid]]" />
+            <input type="hidden" name="subid" value="[[*alias]]" />
+            <div class="header">
+                 <table>
+                    <tbody><tr>
+                    <td><h4>See [[*subcat:is=`Land+Rover`:then=`Land Rover`:else=`[[*subcat]]`:ifempty=`New Cars`]] Clearance Prices</h4></td>
+                    </tr>
+                </tbody></table>
+                <img class="header-icon" src="http://reply-articles.reply.modxcloud.com/assets/images/forms/car-icon.png">
+            </div>
+             <fieldset id="contact_info">
+                <ol>
+                  <li id="BaseType">
+                    <label for="details[]"><i class="icon-play"></i>Choose your vehicle:</label>
+                    <span class="input_wrapper rounded">
+                      <select class="cusS" data-validate="presence" name="make" id="TopPcMakeDropDown">
+            <option value="">[[*subcat:isempty=`SELECT MAKE`]]</option>
+            </select>
+                    </span>
+                  </li>
+                   <li id="BaseType">
+                    <label for="details[]"><i class="icon-play"></i>Select a model:</label>
+                    <span class="input_wrapper rounded">
+                    <select class="cusS" data-validate="presence" name="model" id="TopPcModelDropDown">
+                    <option value="">[[*subsubcat:isempty=`SELECT MODEL`]]</option>
+                    </select>
+                    </span>
+                  </li>
+                 
+              </ol>
+                <ol>
+                  <li class="contact_field">
+                    <label for="data[FirstName]"><i class="icon-play"></i>First Name <span>&#042;</span></label>
+                    <input class="input_text" type="text" name="data[FirstName]" data-validate="presence" id="first_name" />
+                  </li>
+                  <li class="contact_field">
+                    <label for="data[LastName]"><i class="icon-play"></i>Last Name <span>&#042;</span></label>
+                    <input class="input_text" type="text" name="data[LastName]" data-validate="presence" id="last_name" />
+                  </li>
+                  <li class="contact_field">
+                    <label for="data[AddressLine1]"><i class="icon-play"></i>Address <span>&#042;</span></label>
+                    <input class="input_text" type="text" name="data[AddressLine1]" data-validate="presence" id="address" />
+                  </li>
+                   <li class="contact_field">
+                    <label for="data[Zip]"><i class="icon-play"></i>Zip <span>&#042;</span></label>
+                    <span class="input_wrapper">
+                      <input class="input_text enterzip" type="text" name="data[Zip]" data-validate="zip" id="TopPcZipCode" value="" />
+                    </span>
+                  </li>
+                  <li class="contact_field phone_fields">
+                    <label for="data[Phone]"><i class="icon-play"></i>Phone <span>&#042;</span></label>
+                    <!-- <input class="input_text" type="text" name="data[Phone]" data-validate="phone" id="phone" /> -->
+                    <input type="text" id="PhoneArea" class="input_text ph" maxlength="3" data-validate="phone_area">
+                    <input type="text" id="PhonePrefix" class="input_text ph" maxlength="3" data-validate="phone_prefix">
+                    <input type="text" id="PhoneSuffix" class="input_text ph4" maxlength="4" data-validate="phone_suffix">
+                  </li>
+                  <li class="contact_field" id="email_field">
+                    <label for="data[Email]"><i class="icon-play"></i>Email <span>&#042;</span></label>
+                    <input class="input_text" type="text" name="data[Email]" data-validate="email" id="email" />  
+                  </li>
+                  ‪<li class="submit_step  btn btn-warning">‬
+                    ‪<input class="main-button lead-button" type="submit" id="ContactSubmit" value="Done! Click to see Quotes!">‬
+                  ‪</li>‬
+                </ol>
+            </fieldset>
+            <fieldset id="thank_you" style="display: none;">
+                <ol>
+                  <li class="contact_field">
+                    <label>THANK YOU</label>
+            <p>Thank you! Your contact information will be sent to a qualified local dealer who will quickly provide you with the most accurate price quote and rebate/incentive information.</p>
+                  </li>
+                </ol>
+            </fieldset>
+            <fieldset id="overlay" style="min-height:100px; display: none;">
+                <ol>
+                  <li class="contact_field">
+                    <label style="text-align:center; margin:10px 0px 15px 0px;">Searching...</label>
+                    <img class="reply-loader" src="assets/images/reply-loader.gif" style="display:block; margin:0 auto;">
+                  </li>
+                </ol>
+            </fieldset>
+            <fieldset id="dealer_select" style="display: none;">
+                <ol>
+                  <li class="contact_field">
+                    <label>DEALER SELECT</label>
+                  </li>
+                  <li class="buyer_field">
+                    <p></p>
+                  </li>
+                  ‪<li class="submit_step btn btn-warning">‬
+                    ‪<input class="main-button lead-button" type="submit" id="DealerSubmit" value="See Quotes!">‬
+                  ‪</li>‬
+                </ol>
+            </fieldset>
+            </form>
+        </div>
+      <!-- END MINIFORM -->

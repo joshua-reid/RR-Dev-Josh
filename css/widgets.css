@@ -1,0 +1,125 @@
+.btn-continue
+{
+    font-size:18px;
+    padding:6px;
+    width:270px
+}
+
+.btn-continue i
+{
+    margin-top:5px
+}
+
+.form_wrap
+{
+    position:absolute;
+    display:block
+}
+
+.form
+{
+    position:absolute;
+    display:block
+}
+
+.miniform_all
+{
+    background:url(http://reply-articles.reply.modxcloud.com/assets/images/forms/miniform_300x250.png) bottom center no-repeat;
+    margin:15px 50px;
+    width:300px;
+    height:250px;
+    font-size:11px
+}
+
+.header
+{
+    display:block;
+    height:50px;
+    position:absolute;
+    top:0
+}
+
+.header table td
+{
+    height:50px;
+    vertical-align:middle!important
+}
+
+.header h1
+{
+    color:#73767C;
+    font-size:15px;
+    font-style:italic;
+    font-weight:400;
+    line-height:16px;
+    margin:0;
+    padding-right:5px;
+    padding-left:50px;
+    text-align:left;
+    width:240px
+}
+
+.header-icon
+{
+    display:block;
+    margin:7px 0 0 5px;
+    position:absolute;
+    top:0
+}
+
+.questions_wrap
+{
+    top:50px;
+    position:relative;
+    width:285px;
+    margin-left:15px
+}
+
+.questions_wrap h3
+{
+    font-size:14px;
+    line-height:14px;
+    margin:3px 0 5px
+}
+
+.powered_by
+{
+    color:#B9B9B9;
+    display:block;
+    height:12px;
+    left:0;
+    margin:0;
+    padding:3px 0;
+    position:absolute;
+    text-align:center;
+    top:230px;
+    width:300px
+}
+
+.powered
+{
+    font-size:10px;
+    text-align:center
+}
+
+.powered a
+{
+    color:#B9B9B9;
+    text-decoration:none
+}
+
+.error-message
+{
+    display:block;
+    height:15px;
+    margin:0;
+    position:relative;
+    top:-5px
+}
+
+.error-message p
+{
+    color:red;
+    font-weight:500;
+    margin:0
+}

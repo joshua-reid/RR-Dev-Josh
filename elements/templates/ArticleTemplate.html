@@ -1,0 +1,45 @@
+[[$head]]
+
+   <body>
+
+      [[$header]]
+
+      <div class="main row-fluid">
+         <div class="container">
+            <section class="span8">
+			<ul class="B_crumbBox">
+			[[!QuickCrumbs? &separator=`&nbsp;|&nbsp;` &tpl=`crumbTpl` &selfTpl=`crumbHereTpl` &hideEmptyContainers=`1` &showSiteStart=`0`]] 
+			</ul>
+               <h1>[[*pagetitle]]</h1>
+               <p class="post-info">
+                  <span class="left">Posted on [[*publishedon:strtotime:date=`%b %d, %Y`]] by <a rel="me" href="[[++reply_site_url]][[~[[*id]]]]author/[[*createdby:userinfo=`username`]]">[[*createdby:userinfo=`fullname`]]</a></span>
+			   [[*articlestags:notempty=`
+                  <span class="tags left">&nbsp;| Tags: [[!tolinks? &useTagsFurl=`1` &items=`[[*articlestags]]` &tpl=`LinkTpl` &target=`[[*parent]]` ]]</span>
+               `]]
+               [[+comments_enabled:is=`1`:then=`&nbsp;| <a href="[[++reply_site_url]][[~[[*id]]]]#comments" class="comments">Comments ([[+comments_count]])</a>`]]
+               </p>
+               <div class="entry">
+                  <p class="lead">[[*introtext]]</p>
+                  [[*content]]
+				  [[$SEM-button]]
+               </div>
+            </section>
+            [[$aside]]
+         </div>   
+      </div> <!-- /main -->
+
+	  [[$footer]]
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/[[++jquery_version]]/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-[[++jquery_version]].min.js"><\/script>')</script>
+
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
+
+	  [[++google_analytics]]
+	  [[++omniture]]
+	  [[++comscore]]
+	  
+	  [[++quickbar_plugin]]
+   </body>
+</html>

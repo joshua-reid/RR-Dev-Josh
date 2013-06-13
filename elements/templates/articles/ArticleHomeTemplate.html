@@ -1,0 +1,261 @@
+[[$head]]
+  <body id="ArticlesHomeTemplate">
+[[$header]]
+    <div class="main">
+        <h1>Consumer Resource Center</h1>
+        <section class="carousel-wrapper">
+          <div id="LatestArticlesCarousel" class="carousel slide gW clearfix">
+            <div class="carousel-inner">
+              <div class="active item clearfix">
+                <h3>Latest in Home Improvement</h3>
+                  [[getResources? 
+                    &parents=`18` 
+                    &depth=`0`
+                    &tpl=`ArticlePreviewMiniTpl` 
+                    &tpl_4=`ArticlePreviewMiniMobileTpl` 
+                    &tpl_5=`ArticlePreviewMiniMobileTpl` 
+                    &sortby=`publishedon` 
+                    &showHidden=`1` 
+                    &limit=`5` 
+                    &includeTVs=`1`
+                  ]]
+              </div><!--END ACTIVE ITEM-->
+              <div class="item clearfix">
+                <h3>Latest in Automotive</h3>
+                  [[getResources? 
+                    &parents=`2`
+                    &depth=`0`
+                    &tpl=`ArticlePreviewMiniTpl` 
+                    &tpl_4=`ArticlePreviewMiniMobileTpl` 
+                    &tpl_5=`ArticlePreviewMiniMobileTpl` 
+                    &sortby=`publishedon` 
+                    &showHidden=`1` 
+                    &limit=`5` 
+                    &includeTVs=`1`
+                  ]]
+              </div><!--END ACTIVE ITEM-->
+              <div class="item clearfix">
+                 <h3>Latest in Insurance</h3>
+                 [[getResources? &parents=`3` &depth=`0` &tpl=`ArticlePreviewMiniTpl` &tpl_4=`ArticlePreviewMiniMobileTpl` &tpl_5=`ArticlePreviewMiniMobileTpl` &sortby=`publishedon` &showHidden=`1` &limit=`5` &includeTVs=`1`]]
+              </div>
+              <div class="item clearfix">
+                 <h3>Latest in Real Estate</h3>
+                 [[getResources? &parents=`6` &depth=`0` &tpl=`ArticlePreviewMiniTpl` &tpl_4=`ArticlePreviewMiniMobileTpl` &tpl_5=`ArticlePreviewMiniMobileTpl` &sortby=`publishedon` &showHidden=`1` &limit=`5` &includeTVs=`1`]]
+              </div>
+            </div> <!--END CAROUSEL INNER-->
+            <a class="carousel-control-custom left" href="#LatestArticlesCarousel" data-slide="prev"><i class="icon-circle-arrow-left"></i></a>
+            <a class="carousel-control-custom right" href="#LatestArticlesCarousel" data-slide="next"><i class="icon-circle-arrow-right"></i></a>
+          </div>
+        </section>
+        <section class="gW">
+          <div class="gd8">
+            <h2><a href="[[++reply_site_url]][[~18]]">Home Improvement</a></h2>
+            <div class="article-wrapper clearfix">
+              <!-- Featured Article -->
+               [[getResources? 
+                &parents=`-1` 
+                &resources=`[[*homeimprovementfeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto`
+                &showHidden=`1` 
+                &limit=`1` 
+                &includeTVs=`1`
+                &tab-copy=`Featured`
+                &tab-icon=`star`
+              ]]
+
+              <!-- Popular Article -->
+              [[getResources? 
+                &parents=`18`
+                &resources=`-[[*homeimprovementfeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto,HitsPage`
+                &sortbyTV=`HitsPage`
+                &sortbyTVType=`integer` 
+                &showHidden=`1` 
+                &includeTVs=`1` 
+                &limit=`1`
+                &tab-copy=`Popular`
+                &tab-icon=`heart` 
+               
+              ]]
+
+              <div class="category-list">
+                <h3>Categories</h3>
+                 <ul class="unstyled">
+                    [[!tagLister? 
+                      &parents=`18` 
+                      &limit=`6` 
+                      &target=`18` 
+                      &tv=`articlestags` 
+                      &tpl=`TagListTpl`
+                    ]]
+                 </ul>
+              </div>
+            </div>    
+          </div> <!-- /gdS9 -->
+          <aside class="gdM4">  
+            [[$MiniForm-home-improvement-generic]]
+          </aside>
+        </section>      
+        <section class="gW clearfix">
+          <div class="gd8">
+            <h2><a href="[[++reply_site_url]][[~2]]">Automotive</a></h2>
+            <div class="article-wrapper clearfix">
+              <!-- Featured Article -->
+               [[getResources? 
+                &parents=`-1` 
+                &resources=`[[*automotivefeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto`
+                &showHidden=`1` 
+                &limit=`1` 
+                &includeTVs=`1`
+                &tab-copy=`Featured`
+                &tab-icon=`star`
+              ]]
+
+              <!-- Popular Article -->
+              [[getResources? 
+                &parents=`2`
+                &resources=`-[[*automotivefeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &sortbyTV=`HitsPage`
+                &sortbyTVType=`integer`
+                &includeTVList=`coverphoto,HitsPage`
+                &showHidden=`1` 
+                &includeTVs=`1` 
+                &limit=`1`
+                &tab-copy=`Popular`
+                &tab-icon=`heart` 
+                &tvFilters=`HitsPage<<200` 
+              ]]
+
+              <div class="category-list">
+                <h3>Categories</h3>
+                 <ul class="unstyled">
+                    [[!tagLister? 
+                      &parents=`2` 
+                      &limit=`6` 
+                      &target=`2` 
+                      &tv=`articlestags` 
+                      &tpl=`TagListTpl`
+                    ]]
+                 </ul>
+              </div>
+            </div>    
+          </div> <!-- /gdS9 -->
+          <aside class="gdM4 widgetV2">  
+            [[$MiniForm-automotive-generic]]
+          </aside>
+        </section>  
+        <section class="gW clearfix">
+          <div class="gd8">
+            <h2><a href="[[++reply_site_url]][[~3]]">Insurance</a></h2>
+            <div class="article-wrapper clearfix">
+              <!-- Featured Article -->
+               [[getResources? 
+                &parents=`-1` 
+                &resources=`[[*insurancefeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto`
+                &showHidden=`1` 
+                &limit=`1` 
+                &includeTVs=`1`
+                &tab-copy=`Featured`
+                &tab-icon=`star`
+              ]]
+
+              <!-- Popular Article -->
+              [[getResources? 
+                &parents=`3`
+				&resources=`-[[*insurancefeatured]]`
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto,HitsPage`
+                &sortbyTV=`HitsPage`
+                &sortbyTVType=`integer` 
+                &showHidden=`1` 
+                &includeTVs=`1` 
+                &limit=`1`
+                &tab-copy=`Popular`
+                &tab-icon=`heart` 
+                &tvFilters=`HitsPage<<200` 
+              ]]
+              <div class="category-list">
+                <h3>Categories</h3>
+                <ul class="unstyled">
+                 <ul class="unstyled">
+                    [[!tagLister? 
+                      &parents=`3` 
+                      &limit=`6` 
+                      &target=`3` 
+                      &tv=`articlestags` 
+                      &tpl=`TagListTpl`
+                    ]]
+                 </ul>
+                </ul>
+              </div>
+            </div>    
+          </div> <!-- /gdS9 -->
+          <aside class="gdM4">  
+            [[$MiniForm-insurance-generic]]
+          </aside>
+        </section>
+        <section class="gW clearfix">
+          <div class="gd8">
+            <h2><a href="[[++reply_site_url]][[~6]]">Real Estate</a></h2>
+            <div class="article-wrapper clearfix">
+              <!-- Featured Article -->
+               [[getResources? 
+                &parents=`-1` 
+                &resources=`[[*realestatefeatured]]` 
+                &tpl=`ArticlePreviewTpl` 
+                &includeTVList=`coverphoto`
+                &showHidden=`1` 
+                &limit=`1` 
+                &includeTVs=`1`
+                &tab-copy=`Featured`
+                &tab-icon=`star`
+              ]]
+
+              <!-- Popular Article -->
+                [[getResources? 
+                  &parents=`6`
+                  &depth=`0`
+                  &resources=`-[[*realestatefeatured]]`
+                  &tpl=`ArticlePreviewTpl` 
+                  &sortbyTV=`HitsPage`
+                  &sortbyTVType=`integer` 
+                  &includeTVList=`coverphoto,HitsPage`
+                  &showHidden=`1` 
+                  &includeTVs=`1` 
+                  &limit=`1`
+                  &tab-copy=`Popular`
+                  &tab-icon=`heart` 
+                  &tvFilters=`HitsPage<<200` 
+                ]]
+              <div class="category-list">
+                <h3>Categories</h3>
+                 <ul class="unstyled">
+                    [[!tagLister? 
+                      &parents=`6` 
+                      &limit=`6` 
+                      &target=`6` 
+                      &tv=`articlestags` 
+                      &tpl=`TagListTpl`
+                    ]]
+                 </ul>
+              </div>
+            </div>    
+          </div> <!-- /gdS9 -->
+          <aside class="gdM4">  
+            [[$MiniForm-realestate-generic]]
+          </aside>
+        </section>
+      </div> <!-- /main -->
+      [[$footer]]
+      [[$footer-scripts]]
+      [[$footer-scripts-widgets]]
+	  [[$site-tracking]]
+</body>
+</html>

@@ -1,0 +1,27 @@
+[[$head]]
+  <body id="ArticleSearchTemplate">
+   [[$header]]
+    <div class="main">
+      <section class="gW clearfix">
+		<div class="gd8">
+		  <div class="article-wrapper clearfix">
+			[[!SimpleSearch? 
+			  &tpl=`ArticleRowSearchTpl` 
+			  &containerTpl=`SimpleSearchPageContainerTpl`
+			  &noResultsTpl=`SimpleSearchPageNoResultsTpl`
+			  &pageTpl=`SimpleSearchPageLinkTpl`
+			  &sortBy=`pagetitle,introtext,content`
+			  &pagingSeparator=` `
+			  &ids=`2,7,3,6,18`
+			  &exclude=`2,7,3,6,18`
+			  &includeTVs=`1`
+			]]
+		  </div> <!-- /article-wrapper -->
+		</div> <!-- /gd8 -->
+      </section>  
+    </div> <!-- /main -->
+	[[$footer]]
+    [[$footer-scripts]]
+	[[$site-tracking]]
+  </body>
+</html>
